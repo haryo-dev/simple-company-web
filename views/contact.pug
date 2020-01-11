@@ -1,0 +1,16 @@
+extend layout.pug
+
+block content
+  .container
+    form#contact(action="/sendemail" method="post")
+      h3 Contact Us
+      fieldset
+        input(placeholder="Your name" type="text" tabindex="1" name="name" required="" autofocus="")
+      fieldset
+        input(placeholder="Your Email Address" type="email" tabindex="2" name="email" required="")
+      fieldset
+        input(placeholder="Your Phone Number (optional)" type="tel" tabindex="3" name="phonenumber" required="")
+      fieldset
+        textarea(placeholder="Type your message here...." tabindex="5" name="message" required="")
+      fieldset
+        button#contact-submit(name="submit" type="submit" data-submit="...Sending") Submit
