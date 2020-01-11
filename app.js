@@ -23,7 +23,7 @@ app.post('/sendemail',(req,res,next)=>{
   var transporter = nodemailer.createTransport({
     service: 'gmail',
     auth: {
-      user: 'youremail',//replace with your email
+      user: 'youremail@gmail.com',//replace with your email
       pass: 'password'//replace with your password
     }
   });
@@ -35,8 +35,8 @@ app.post('/sendemail',(req,res,next)=>{
     html is our form details which we parsed using bodyParser.
   */
   var mailOptions = {
-    from: 'youremail.com',//replace with your email
-    to: 'youremail.com',//replace with your email
+    from: 'youremail@gmail.com.com',//replace with your email
+    to: 'youremail@gmail.com',//replace with your email
     subject: `Contact name: ${req.body.name}`,
     html:`<h1>Contact details</h1>
           <h2> name:${req.body.name} </h2><br>
