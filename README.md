@@ -7,7 +7,8 @@ It has an index, contact and about pages, and three specific pages which can be 
 
 The templates inside view folder are using pug templating engine.
 
-<b>nodemailer.</b>
+<b>nodemailer:</b>
+
 For contact page using nodemailer, modules for send emails.
 To change sender & receiver email address, edit the mailOptions variable inside app.js file in root folder.
 Don't forget to configure your gmail account for nodemailer.
