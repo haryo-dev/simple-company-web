@@ -1,5 +1,5 @@
 # simple-company-web
-Simple Company profile Website
+Simple Company Profile Website
 
 This is a simple dynamic site made with Node.js and Express.js.
 
